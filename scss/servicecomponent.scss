@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+p {
+  padding: 0 !important ;
+  margin: 0 !important;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: white;
+}
+
+$font-weight: (
+  "normal": 400,
+  "regular": 500,
+  "regular_1": 700,
+  "bold": 800,
+);
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1280px,
+  "xxl": 1400px,
+);
+
+@mixin font-size-aboutus-content {
+  font-size: 18px;
+  font-family: "Rubik";
+
+  @media (max-width: map-get($breakpoints,lg)) {
+    font-size: 16px;
+  }
+  @media (max-width: map-get($breakpoints,md)) {
+    font-size: 14px;
+  }
+  @media (max-width: map-get($breakpoints,sm)) {
+    font-size: 12px !important;
+  }
+}
+@mixin font-size-aboutus-engagement {
+  font-size: 24px;
+  font-family: "Rubik";
+
+  @media (max-width: map-get($breakpoints,lg)) {
+    font-size: 20px;
+  }
+  @media (max-width: map-get($breakpoints,md)) {
+    font-size: 18px;
+  }
+  @media (max-width: map-get($breakpoints,sm)) {
+    font-size: 15px !important;
+  }
+}
+@mixin font-size-services {
+  font-size: 42px;
+  font-family: "Rubik";
+
+  @media (max-width: map-get($breakpoints,lg)) {
+    font-size: 35px;
+  }
+  @media (max-width: map-get($breakpoints,md)) {
+    font-size: 30px;
+  }
+  @media (max-width: map-get($breakpoints,sm)) {
+    font-size: 25px !important;
+  }
+  @media (max-width: 500px) {
+    font-size: 23px !important;
+  }
+}
+
+@mixin font-size-services-sml-text {
+  font-size: 18px;
+  font-family: "Rubik";
+  line-height: 23px;
+
+  @media (max-width: map-get($breakpoints,lg)) {
+    font-size: 14px;
+  }
+  @media (max-width: map-get($breakpoints,md)) {
+    font-size: 12px;
+  }
+  @media (max-width: map-get($breakpoints,sm)) {
+    font-size: 10px !important;
+  }
+}
+
+.services-container {
+  .container {
+    @media (max-width: map-get($breakpoints,"lg")) {
+      .row:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .row:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .services-text {
+      :first-child {
+        :first-child {
+          @media (max-width: (map-get($breakpoints,"xl"))) {
+            font-size: 45px;
+          }
+
+          @media (max-width: (map-get($breakpoints,"lg"))) {
+            font-size: 40px;
+          }
+          @media (max-width: (map-get($breakpoints,"md"))) {
+            font-size: 35px;
+          }
+          @media (max-width: (map-get($breakpoints,"sm"))) {
+            font-size: 30px;
+          }
+        }
+        :nth-child(2) {
+          :first-child {
+            @media (max-width: (map-get($breakpoints,"xl"))) {
+              width: 55px !important;
+            }
+
+            @media (max-width: (map-get($breakpoints,"lg"))) {
+              width: 50px !important;
+            }
+            @media (max-width: (map-get($breakpoints,"md"))) {
+              width: 40px !important;
+            }
+            @media (max-width: (map-get($breakpoints,"sm"))) {
+              width: 35px !important;
+            }
+          }
+          :nth-child(2) {
+            @media (max-width: (map-get($breakpoints,"lg"))) {
+              width: 138px !important;
+            }
+            @media (max-width: (map-get($breakpoints,"md"))) {
+              width: 115px !important;
+            }
+            @media (max-width: (map-get($breakpoints,"sm"))) {
+              width: 110px !important;
+            }
+          }
+        }
+      }
+      font-family: "Rubik";
+      font-weight: map-get($map: $font-weight, $key: "regular");
+    }
+    .row {
+      --bs-gutter-x: 8rem !important;
+      .col {
+        .service-text-head {
+          @include font-size-services;
+
+          font-weight: map-get($map: $font-weight, $key: "regular");
+          @media (max-width: map-get($breakpoints,"lg")) {
+            text-align: left !important;
+          }
+          @media (max-width: map-get($breakpoints,"md")) {
+            text-align: center !important;
+          }
+        }
+        .service-text-content {
+          @include font-size-services-sml-text;
+          font-weight: map-get($map: $font-weight, $key: "normal");
+
+          @media (max-width: map-get($breakpoints,"lg")) {
+            text-align: left !important;
+          }
+          @media (max-width: map-get($breakpoints,"md")) {
+            text-align: center !important;
+          }
+        }
+      }
+      .services-img {
+        @media (max-width: map-get($breakpoints,"md")) {
+          width: 350px !important;
+        }
+        @media (max-width: map-get($breakpoints,"lg")) {
+          width: 400px;
+        }
+        @media (max-width: 400px) {
+          width: 280px !important;
+        }
+      }
+    }
+  }
+}

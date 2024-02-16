@@ -1,0 +1,253 @@
+@use "scss/servicecomponent.scss";
+
+.asset5 {
+  position: absolute;
+  top: 87rem;
+  left: 0;
+  z-index: -1;
+  max-width: 17%;
+}
+.asset6 {
+  position: absolute;
+  top: 128rem;
+  right: 0;
+  z-index: -1;
+  max-width: 17%;
+}
+.asset7 {
+  position: absolute;
+  top: 152rem;
+  left: 0;
+  z-index: -1;
+  max-width: 17%;
+}
+.asset8 {
+  position: absolute;
+  top: 184rem;
+  right: 0;
+  z-index: -1;
+  max-width: 17%;
+}
+.asset10 {
+  position: absolute;
+  top: 215rem;
+  left: 0;
+  z-index: -1;
+  max-width: 19%;
+}
+.asset11 {
+  position: absolute;
+  top: 308rem;
+  left: 0;
+  z-index: -1;
+  max-width: 19%;
+}
+.asset12 {
+  position: absolute;
+  top: 240rem;
+  right: 0;
+  z-index: -1;
+  max-width: 19%;
+}
+@media (max-width: 992px) {
+  .services-container .container .row:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-container .container .row:nth-child(even) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.services-container .container .services-text {
+  font-family: "Rubik";
+  font-weight: 500;
+}
+@media (max-width: 1280px) {
+  .services-container .container .services-text :first-child :first-child {
+    font-size: 45px;
+  }
+}
+@media (max-width: 992px) {
+  .services-container .container .services-text :first-child :first-child {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .services-container .container .services-text :first-child :first-child {
+    font-size: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .services-container .container .services-text :first-child :first-child {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1280px) {
+  .services-container
+    .container
+    .services-text
+    :first-child
+    :nth-child(2)
+    :first-child {
+    width: 55px !important;
+  }
+}
+@media (max-width: 992px) {
+  .services-container
+    .container
+    .services-text
+    :first-child
+    :nth-child(2)
+    :first-child {
+    width: 50px !important;
+  }
+}
+@media (max-width: 768px) {
+  .services-container
+    .container
+    .services-text
+    :first-child
+    :nth-child(2)
+    :first-child {
+    width: 40px !important;
+  }
+}
+@media (max-width: 576px) {
+  .services-container
+    .container
+    .services-text
+    :first-child
+    :nth-child(2)
+    :first-child {
+    width: 35px !important;
+  }
+}
+@media (max-width: 992px) {
+  .services-container
+    .container
+    .services-text
+    :first-child
+    :nth-child(2)
+    :nth-child(2) {
+    width: 138px !important;
+  }
+}
+@media (max-width: 768px) {
+  .services-container
+    .container
+    .services-text
+    :first-child
+    :nth-child(2)
+    :nth-child(2) {
+    width: 115px !important;
+  }
+}
+@media (max-width: 576px) {
+  .services-container
+    .container
+    .services-text
+    :first-child
+    :nth-child(2)
+    :nth-child(2) {
+    width: 110px !important;
+  }
+}
+.services-container .container .row .col .service-text-head {
+  font-size: 42px;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .services-container .container .row .col .service-text-head {
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .services-container .container .row .col .service-text-head {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .services-container .container .row .col .service-text-head {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 500px) {
+  .services-container .container .row .col .service-text-head {
+    font-size: 23px !important;
+  }
+}
+@media (max-width: 992px) {
+  .services-container .container .row .col .service-text-head {
+    text-align: left !important;
+  }
+}
+@media (max-width: 768px) {
+  .services-container .container .row .col .service-text-head {
+    text-align: center !important;
+  }
+}
+.services-container .container .row .col .service-text-content {
+  font-size: 18px;
+  font-family: "Rubik";
+  line-height: 23px;
+  font-weight: 400;
+}
+@media (max-width: 992px) {
+  .services-container .container .row .col .service-text-content {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .services-container .container .row .col .service-text-content {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .services-container .container .row .col .service-text-content {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 992px) {
+  .services-container .container .row .col .service-text-content {
+    text-align: left !important;
+  }
+}
+@media (max-width: 768px) {
+  .services-container .container .row .col .service-text-content {
+    text-align: center !important;
+  }
+}
+@media (max-width: 768px) {
+  .services-container .container .row .services-img {
+    width: 350px !important;
+  }
+}
+@media (max-width: 992px) {
+  .services-container .container .row .services-img {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .services-container .container .row .services-img {
+    width: 280px !important;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #fff;
+}
+.container .team-heading {
+  margin-bottom: 30px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-top: 50px;
+}
